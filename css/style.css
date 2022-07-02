@@ -12,6 +12,7 @@ html{
 *::before,
 *::after{
     box-sizing: inherit;
+    background-repeat: no-repeat;
 }
 
 body{
@@ -58,7 +59,6 @@ a:focus{
     color: #B8BECD;
     text-decoration: none;
     margin-right: 35px;
-    font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -99,3 +99,96 @@ a:focus{
     border-radius: 8px;
     text-decoration: none;
 }
+
+/* Intro */
+
+.intro{
+    background-image: url(../img/intro-bg.png), url(../img/svg/green-circle.svg);
+    background-position: top 36px right 105px, top 363px left 80px;
+    margin-bottom: 270px;
+}
+
+.intro__content{
+    padding: 69px 0 47px 0;
+    background-image: url(../img/svg/cross.svg);
+    background-position: top 89px left 466px;
+}
+
+.intro__title{
+    max-width: 356px;
+    margin-bottom: 74px;
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 80px;
+}
+
+.intro__finter-title{
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+    margin-bottom: 21px;
+}
+
+.intro__finder-line{
+    display: block;
+    width: 32px;
+    height: 2px;
+    background-color: #202336;
+    margin-bottom: 48px;
+}
+
+.intro__finter-wrap{
+    display: grid;
+    grid-template-rows: 52px 52px;
+    grid-template-columns: 220px 220px;
+    gap: 35px 30px;
+    margin-bottom: 51px;
+}
+
+.intro__finder-select{
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 32px;
+    color: #4A4C53;
+    border: 0.8px solid #AFB0B9;
+    border-radius: 6px;
+    padding: 0 31px;
+    background-image: url(../img/svg/arrow-select.svg);
+    background-position: top 24px right 31px;
+}
+
+.intro__finder-select{
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+.intro__finder-select::-ms-expand {
+	display: none;
+}
+
+.intro__finder-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 52px;
+    background-color: #FB8F1D;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-family: 'Mulish';
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 60px;
+}
+
+.intro__finder-select-option{
+    display: block;
+    width: 220px;
+    height: 52px;
+}
+
