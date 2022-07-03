@@ -17,7 +17,7 @@ html{
 
 body{
     font-family: Inter, sans-serif;
-    font-size: normal;
+    font-style: normal;
 }
 
 img{
@@ -33,6 +33,23 @@ a:focus{
     max-width: 1260px;
     padding: 0 20px;
     margin: 0 auto;
+}
+
+.main-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 52px;
+    background-color: #FB8F1D;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-family: 'Mulish';
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 60px;
+    text-decoration: none;
 }
 
 /* Header */
@@ -170,25 +187,98 @@ a:focus{
 	display: none;
 }
 
-.intro__finder-button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 180px;
-    height: 52px;
-    background-color: #FB8F1D;
-    border: none;
-    border-radius: 8px;
-    color: white;
-    font-family: 'Mulish';
-    font-weight: 700;
-    font-size: 17px;
-    line-height: 60px;
-}
-
 .intro__finder-select-option{
     display: block;
     width: 220px;
     height: 52px;
 }
+
+/* Info one */
+
+.info{
+    background-image: url(../img/info-1.png);
+    background-position: top 16px left 141px;
+    margin-bottom: 262px;
+}
+
+.info__content{
+    padding: 112px 27px;
+    position: relative;
+}
+
+.info__content::after{
+    content: '';
+    width: 21px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(100%) rotate(8deg);
+    background-image: url(../img/svg/cross.svg);
+}
+
+.info__side{
+    max-width: 481px;
+    margin-left: auto;
+}
+
+.info__title{
+    font-family: 'Playfair Display';
+    color: black;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 50px;
+    margin-bottom: 20px;
+}
+
+.info__desc{
+    font-family: 'Mulish';
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 30px;
+    color: #7D7987;
+    max-width: 440px;
+    margin-bottom: 33px;
+}
+
+.info__main-button{
+    height: 48px;
+}
+
+/* Places */
+
+.places__content{
+    padding: 41px 50px 60px 50px;
+}
+
+.places__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 56px;
+}
+
+.places__top-title{
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 50px;
+    color: black;
+}
+
+.places__top-more{
+    padding-right: 15px;
+}
+
+.places__top-link{
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 60px;
+    color: #FB8F1D;
+    text-decoration: none;
+}
+
+
+
+
 
