@@ -267,17 +267,59 @@ a:focus{
 }
 
 .places__top-more{
-    padding-right: 15px;
+    padding: 0 15px 7px 0;
+    display: flex;
+    align-items: center;
+    background-image: url(../img/svg/arrow-more.svg);
+    background-position: top 3px right 0px;
 }
 
 .places__top-link{
     font-weight: 600;
     font-size: 17px;
-    line-height: 60px;
+    line-height: 17px;
     color: #FB8F1D;
     text-decoration: none;
+    align-self: flex-end;
 }
 
+.places__cards{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0 25px;
+}
+
+.places__card{
+    border-radius: 8px 8px 8px 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.places__card-desc{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    width: 120px;
+    min-height: 56px;
+    padding: 11px 22px 5px 1px;
+    border-radius: 0 6px 0 0;;
+}
+
+.places__card-title{
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 25px;
+    color: #042521;
+}
+
+.places__card-location{
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    color: #80918E;
+}
 
 
 
