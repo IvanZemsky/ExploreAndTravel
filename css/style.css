@@ -407,6 +407,7 @@ a:focus{
 .testim__wrap{
     display: flex;
     justify-content: space-between;
+    gap: 40px;
 }
 
 .testim__desc{
@@ -446,20 +447,73 @@ a:focus{
     line-height: 18px;
 }
 
+.testim__photo{
+    padding: 17px;
+    background-image: url(../img/svg/green-circle.svg);
+    background-position: top 2px right 0;
+    background-size: 42px 42px;
+    position: relative;
+}
+
+.testim__photo-wrap::before{
+    content: '';
+    display: block;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    bottom: 3px;
+    left: 3px;
+    background-image: url(../img/svg/cross.svg);
+    background-size: 32px 32px;
+    transform: translate(-50%, 50%) rotate(8deg);
+    z-index: 10;
+}
+
+.testim__photo-wrap{
+    position: relative;
+    width: 100%;
+}
+
 .testim__photo-img{
     border-radius: 16px;
-    position: relative;
+    width: 100%;
+    width: auto;
+    object-fit: cover;
 }
 
 .testim__photo-arrows{
     position: absolute;
     bottom: 0;
     right: 0;
-    display: block;
     width: 132px;
     min-height: 60px;
     border-radius: 16px 0px 0px 0px;
     background-color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 0 22px;
+    z-index: 1;
+}
+
+.testim__photo-arrow-back{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    border: 2px solid #D7D7D7;
+    background-image: url(../img/svg/testim-stop.svg);
+    background-position: center center;
+    cursor: pointer;
+}
+
+.testim__photo-arrow-forward{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    border: 2px solid black;
+    background-image: url(../img/svg/testim-available.svg);
+    background-position: center center;
+    cursor: pointer;
 }
 
 
