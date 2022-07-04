@@ -206,7 +206,7 @@ a:focus{
     position: relative;
 }
 
-.info__content::after{
+.info__content-one::after{
     content: '';
     width: 21px;
     height: 20px;
@@ -246,6 +246,10 @@ a:focus{
 }
 
 /* Places */
+
+.places{
+    margin-bottom: 232px;
+}
 
 .places__content{
     padding: 41px 50px 60px 50px;
@@ -296,6 +300,25 @@ a:focus{
     position: relative;
 }
 
+.places__card-wrap{
+    position: relative;
+    transition: 0.2s all linear;
+}
+
+.places__card-wrap:hover{
+    transform: scale(1.1);
+}
+
+.places__card-link{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
 .places__card-desc{
     position: absolute;
     bottom: 0;
@@ -304,7 +327,8 @@ a:focus{
     width: 120px;
     min-height: 56px;
     padding: 11px 22px 5px 1px;
-    border-radius: 0 6px 0 0;;
+    border-radius: 0 6px 0 0;
+    z-index: 2;
 }
 
 .places__card-title{
@@ -319,6 +343,123 @@ a:focus{
     font-size: 15px;
     line-height: 24px;
     color: #80918E;
+}
+
+/* Info two */
+
+.info-two{
+    background-image: none;
+    position: relative;
+}
+
+.info-two::after{
+    content: '';
+    position: absolute;
+    top: 37px;
+    right: 154px;
+    width: 16px;
+    height: 16px;
+    display: block;
+    background-image: url(../img/svg/cross.svg);
+    background-size: 16px 16px;
+    transform: rotate(10deg);
+}
+
+.info__content-two{
+    padding: 152px 50px 93px 50px;
+    background-image: url(../img/svg/green-circle.svg),
+    url(../img/info-2.png), 
+    url(../img/svg/cross-rotate.svg);
+    background-position: top 80px left 94px, 
+    top 0px right 41px,
+    bottom 96px left 465px;
+    position: relative;
+}
+
+.info__side-two{
+    max-width: 450px;
+    margin-left: 0;
+}
+
+.info__desc-two{
+    margin-bottom: 39px;
+}
+
+/* Testimonials */
+
+.testim{
+    margin-bottom: 213px;
+}
+
+.testim__content{
+    padding: 0 134px 0 49px; 
+}
+
+.testim__title{
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 50px;
+    color: black;
+    margin-bottom: 43px;
+}
+
+.testim__wrap{
+    display: flex;
+    justify-content: space-between;
+}
+
+.testim__desc{
+    max-width: 450px;
+    padding-top: 102px;
+}
+
+.testim__stars{
+    max-width: 189px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.testim__info{
+    font-family: 'Mulish';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: black;
+    margin-bottom: 40px;
+}
+
+.testim__user{
+    display: block;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 48px;
+    color: black;
+}
+
+.testim__founder{
+    display: block;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.testim__photo-img{
+    border-radius: 16px;
+    position: relative;
+}
+
+.testim__photo-arrows{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: block;
+    width: 132px;
+    min-height: 60px;
+    border-radius: 16px 0px 0px 0px;
+    background-color: white;
 }
 
 
