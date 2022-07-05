@@ -601,6 +601,44 @@ a:focus{
     margin-top: auto;
 }
 
+/* Footer */
+
+.footer{
+    background-color: #F9F9FB;
+}
+
+.footer__content{
+    padding: 78px 0 81px 0;
+}
+
+.footer__top{
+    display: flex;
+    justify-content: space-between;
+    gap: 0 108px;
+}
+
+.footer__top-info{
+    max-width: 337px;
+}
+
+.footer__top-desc{
+    max-width: 295px;
+    font-family: 'Mulish';
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+    color: #848484;
+}
+
+.footer__top-rights{
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 28px;
+    color: #848484;
+}
+
 
 
 
