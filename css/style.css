@@ -154,9 +154,12 @@ a:focus{
 /* Intro */
 
 .intro{
+    margin-bottom: 270px;
+}
+
+.intro__bg-wrapper{
     background-image: url(../img/intro-bg.png), url(../img/svg/green-circle.svg);
     background-position: top 36px right 105px, top 363px left 80px;
-    margin-bottom: 270px;
 }
 
 .intro__content{
@@ -230,9 +233,12 @@ a:focus{
 /* Info one */
 
 .info{
+    margin-bottom: 262px;
+}
+
+.info__bg-wrapper{
     background-image: url(../img/info-1.png);
     background-position: top 16px left 141px;
-    margin-bottom: 262px;
 }
 
 .info__content{
@@ -367,14 +373,17 @@ a:focus{
     transform: rotate(10deg);
 }
 
-.info__content-two{
-    padding: 152px 50px 93px 50px;
+.info-two .wrapper{
     background-image: url(../img/svg/green-circle.svg),
     url(../img/info-2.png), 
     url(../img/svg/cross-rotate.svg);
     background-position: top 80px left 94px, 
     top 0px right 41px,
     bottom 96px left 465px;
+}
+
+.info__content-two{
+    padding: 152px 50px 93px 50px;
     position: relative;
 }
 
@@ -599,6 +608,7 @@ a:focus{
     color: #FB8F1D;
     text-decoration: none;
     margin-top: auto;
+    max-width: fit-content;
 }
 
 /* Footer */
@@ -691,6 +701,62 @@ a:focus{
 
 .footer__bottom-link_facebook{
     padding: 0 5px;
+}
+
+/* Media queries */
+
+@media (min-width: 1660px) {
+
+    .intro__bg-wrapper,
+    .info__bg-wrapper{
+        max-width: 1660px;
+        margin: 0 auto;
+    }
+        
+}
+
+@media (max-width: 1440px) {
+
+    .intro__bg-wrapper{
+        background-position: top 36px right 30px, top 363px left 30px;
+    }
+
+    .info__bg-wrapper{
+        background-position: top 36px left 41px;
+    }
+
+    .info__title-two{
+        max-width: 450px;
+    }
+
+    .info__side-two{
+        max-width: 481px;
+    }
+
+    .info__desc{
+        color: rgb(48, 48, 48);
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width: 1240px) {
+
+    .info__bg-wrapper .wrapper{
+        background-color: rgba(255, 255, 255, 0.65);
+    }
+
+    .info__content-two-opacity{
+        background-color: rgba(255, 255, 255, 0.65);
+    }
+
+}
+
+@media (max-width: 1050px) {
+
+    .
+
 }
 
 
