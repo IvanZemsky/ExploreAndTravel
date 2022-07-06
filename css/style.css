@@ -620,7 +620,7 @@ a:focus{
 .footer__top{
     display: grid;
     grid-template-rows: 100%;
-    grid-template-columns: minmax(280px, 337px) 1fr;
+    grid-template-columns: minmax(190px, 337px) 1fr;
     gap: 0 162px;
     padding: 78px 0 81px 0;
     border-bottom: 0.6px solid #C4C4C4;
@@ -660,6 +660,7 @@ a:focus{
 }
 
 .footer__top-blocks{
+    min-width: 510px;
     display: flex;
     justify-content: space-between;
     gap: 0 35px;
@@ -754,9 +755,35 @@ a:focus{
 }
 
 @media (max-width: 1050px) {
+    
+    .footer__top{
+        gap: 35px 50px;
+        padding: 35px 0;
+    }
+    
+    .footer__top-desc{
+        margin-bottom: 45px;
+    }
+    
+    .footer__top-blocks{
+        display: flex;
+        justify-content: space-between;
+        gap: 0 35px;
+    }
 
-    .
+    .footer__top-links{
+        display: flex;
+        flex-direction: column;
+    }
 
+    .footer__top-list{
+        margin-top: auto;
+    }
+    
+}
+
+@media (max-width: 930px) {
+    
 }
 
 
