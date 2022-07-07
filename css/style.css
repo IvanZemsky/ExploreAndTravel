@@ -50,6 +50,11 @@ a:focus{
     font-size: 17px;
     line-height: 60px;
     text-decoration: none;
+    transition: all .2s linear;
+}
+
+.main-button:hover{
+    opacity: .7;
 }
 
 /* title-link */
@@ -84,6 +89,11 @@ a:focus{
     color: #FB8F1D;
     text-decoration: none;
     align-self: flex-end;
+    transition: .2s;
+}
+
+.title-link__link:hover{
+    opacity: .7;
 }
 
 /* Header */
@@ -114,15 +124,21 @@ a:focus{
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
+    transition: .25s;
 }
 
-.header__nav-link_home{
+.header__nav-link:hover{
+    color: rgb(71, 71, 71);
+}
+
+.header__nav-link_home,
+.header__nav-link_home:hover{
     font-weight: 500;
     color: #202336;
     text-decoration: none;
 }
 
-.header__nav_login{
+.header__nav-login{
     color: #FB8F1D;
     margin-right: 18px;
     font-weight: 500;
@@ -136,9 +152,10 @@ a:focus{
     border: 1px solid #FB8F1D;
     border-radius: 8px;
     text-decoration: none;
+    transition: all .2s linear;
 }
 
-.header__nav_register{
+.header__nav-register{
     margin-right: 0;
     color: white;
     display: flex;
@@ -149,6 +166,12 @@ a:focus{
     background: #FB8F1D;
     border-radius: 8px;
     text-decoration: none;
+    transition: all .2s linear;
+}
+
+.header__nav-login:hover,
+.header__nav-register:hover{
+    opacity: .8;
 }
 
 /* Intro */
@@ -289,10 +312,28 @@ a:focus{
 
 .places{
     margin-bottom: 232px;
+    position: relative;
+}
+
+.places::after{
+    content: '';
+    width: 21px;
+    height: 20px;
+    display: block;
+    background-image: url(../img/svg/cross.svg);
+    transform: rotate(7.5deg);
+    position: absolute;
+    bottom: 180px;
+    left: 121px;
 }
 
 .places__content{
     padding: 41px 50px 60px 50px;
+    background-image: url(../img/svg/green-circle.svg),
+    url(../img/svg/green-circle.svg);;
+    background-position: bottom 0 left 553px,
+    top 0 right 221px;
+    background-size: 20px 20px;
 }
 
 .places__cards{
@@ -317,6 +358,10 @@ a:focus{
     transform: scale(1.1);
 }
 
+.places__card-img{
+    width: 100%;
+}
+
 .places__card-link{
     position: absolute;
     top: 0;
@@ -331,10 +376,13 @@ a:focus{
     position: absolute;
     bottom: 0;
     left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: white;
-    width: 120px;
+    min-width: 120px;
     min-height: 56px;
-    padding: 11px 22px 5px 1px;
+    padding: 11px 22px 1px 1px;
     border-radius: 0 6px 0 0;
     z-index: 2;
 }
@@ -347,9 +395,10 @@ a:focus{
 }
 
 .places__card-location{
+    display: block;
     font-weight: 500;
     font-size: 15px;
-    line-height: 24px;
+    line-height: 15px;
     color: #80918E;
 }
 
@@ -466,6 +515,7 @@ a:focus{
     background-position: top 2px right 0;
     background-size: 42px 42px;
     position: relative;
+    min-width: 245px;
 }
 
 .testim__photo-wrap::before{
@@ -609,6 +659,11 @@ a:focus{
     text-decoration: none;
     margin-top: auto;
     max-width: fit-content;
+    transition: .3s;
+}
+
+.trend__card-link:hover{
+    color: #bb6100;
 }
 
 /* Footer */
@@ -683,6 +738,10 @@ a:focus{
     text-decoration: none;
 }
 
+.footer__top-string:hover{
+    color: #3d3d3d;
+}
+
 .footer__bottom{
     padding: 32px 0;
 }
@@ -698,10 +757,11 @@ a:focus{
 
 .footer__bottom-link{
     display: block;
+    transition: .2s;
 }
 
-.footer__bottom-link_facebook{
-    padding: 0 5px;
+.footer__bottom-link:hover{
+    opacity: .8;
 }
 
 /* Media queries */
@@ -738,6 +798,14 @@ a:focus{
         color: rgb(48, 48, 48);
         font-weight: 700;
         font-size: 20px;
+    }
+
+    .places::after{
+        display: none;
+    }
+
+    .testim{
+        background: none;
     }
 
 }
@@ -784,6 +852,48 @@ a:focus{
 
 @media (max-width: 930px) {
     
+    .intro,
+    .info,
+    .places,
+    .testim,
+    .trend{
+        margin-bottom: 100px;
+    }
+
+    .intro-wrapper{
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .testim__desc{
+        padding-top: 17px;
+    }
+
+}
+
+@media (max-width: 820px) {
+
+    .title-link__top{
+        margin-bottom: 30px;
+    }
+
+    .places__cards{
+        grid-template-rows: auto auto;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    .places__card{
+        border-radius: 8px 8px 0 0;
+    }
+
+    .places__card-desc{
+        width: 100%;
+        padding: 11px 1px 1px 1px;
+        min-height: fit-content;
+        border-radius: 0;
+        z-index: 2;
+    }
+
 }
 
 
