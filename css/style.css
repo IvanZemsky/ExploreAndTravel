@@ -54,7 +54,7 @@ a:focus{
 }
 
 .main-button:hover{
-    opacity: .7;
+    background-color: #faa244;
 }
 
 /* title-link */
