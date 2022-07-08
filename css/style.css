@@ -1167,12 +1167,12 @@ a:focus{
 @media (max-width: 375px) {
 
     .places__cards{
-        grid-template-rows: repeat(4. auto);
+        grid-template-rows: repeat(4, auto);
         grid-template-columns: 1fr;
     }
 
     .trend__cards{
-        grid-template-rows: repeat(4. auto);
+        grid-template-rows: repeat(4, auto);
         grid-template-columns: 1fr;
     }
 
